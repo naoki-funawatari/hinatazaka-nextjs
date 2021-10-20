@@ -1,12 +1,14 @@
-import React from "react";
+import React, { Dispatch } from "react";
 import Song from "./Song";
 import SingleInfo from "./SingleInfo";
+import { DisplayParameter } from "../../index";
 
 type Props = {
   single: SingleInfo;
+  setDisplayParameter: Dispatch<DisplayParameter>;
 };
 
-const Single = ({ single }: Props) => (
+const Single = ({ single, setDisplayParameter }: Props) => (
   <li className="list-group-item">
     <div>
       <h5>{single.titlePrefix}</h5>
@@ -22,8 +24,7 @@ const Single = ({ single }: Props) => (
         .map((song, songIndex) => (
           <Song
             key={`song${songIndex}`}
-            song={song}
-            titlePrefix={single.titlePrefix}
+            {...{ song, titlePrefix: single.titlePrefix, setDisplayParameter }}
           />
         ))}
     </ul>

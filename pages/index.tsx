@@ -1,34 +1,32 @@
 import type { NextPage } from "next";
-import { useRouter } from "next/router";
+import { useState } from "react";
 import singles from "./data/singles.json";
 import Header from "./features/Header";
 import Navigation from "./features/Navigation";
 import Main from "./features/Main";
-import SongInfo from "./features/singles/SongInfo";
 
-type Props = {
+export type DisplayParameter = {
   titlePrefix: string;
   title: string;
   id: string;
 };
 
 const Home: NextPage = () => {
-  const router = useRouter();
-  let query: Props = {
-    titlePrefix: singles[0].titlePrefix,
-    title: singles[0].songs[0].title,
-    id: singles[0].songs[0].id,
+  const single = singles[0];
+  const song = single.songs[0];
+  const defaultParameter: DisplayParameter = {
+    titlePrefix: single.titlePrefix,
+    title: song.title,
+    id: song.id,
   };
-
-  if (typeof router.query.titlePrefix !== "undefined") {
-    query = { ...(router.query as Props) };
-  }
+  const [displayParameter, setDisplayParameter] =
+    useState<DisplayParameter>(defaultParameter);
 
   return (
     <div className="app">
-      <Header />
-      <Navigation singles={singles} />
-      <Main titlePrefix={query.titlePrefix} title={query.title} id={query.id} />
+      <Header {...{ defaultParameter, setDisplayParameter }} />
+      <Navigation {...{ singles, setDisplayParameter }} />
+      <Main {...displayParameter} />
     </div>
   );
 };

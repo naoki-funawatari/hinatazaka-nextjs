@@ -1,19 +1,24 @@
-import React from "react";
+import React, { Dispatch } from "react";
 import Single from "./singles/Single";
 import SingleInfo from "./singles/SingleInfo";
+import { DisplayParameter } from "../index";
 
 type Props = {
   singles: SingleInfo[];
+  setDisplayParameter: Dispatch<DisplayParameter>;
 };
 
-const Navigation = ({ singles }: Props) => (
+const Navigation = ({ singles, setDisplayParameter }: Props) => (
   <div className="nav">
     <h3>シングル</h3>
     <ul className="list-group list-group-flush">
       {[...singles]
         .sort((a, b) => a.singleOrder - b.singleOrder)
         .map((single, singlesIndex) => (
-          <Single key={`single${singlesIndex}`} single={single} />
+          <Single
+            key={`single${singlesIndex}`}
+            {...{ single, setDisplayParameter }}
+          />
         ))}
     </ul>
   </div>

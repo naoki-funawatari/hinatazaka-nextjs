@@ -1,12 +1,7 @@
 import React from "react";
+import { DisplayParameter } from "../../index";
 
-type Props = {
-  titlePrefix: string;
-  title: string;
-  id: string;
-};
-
-const YouTube = ({ titlePrefix, title, id }: Props) => (
+const YouTube = ({ titlePrefix, title, id }: DisplayParameter) => (
   <>
     <h2 className="song-title">
       {titlePrefix}『{title}』

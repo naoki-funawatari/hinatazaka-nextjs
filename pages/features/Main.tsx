@@ -1,15 +1,10 @@
 import React from "react";
 import YouTube from "./videos/YouTube";
+import { DisplayParameter } from "../index";
 
-type Props = {
-  titlePrefix: string;
-  title: string;
-  id: string;
-};
-
-const Main = ({ titlePrefix, title, id }: Props) => (
+const Main = (props: DisplayParameter) => (
   <div className="main">
-    <YouTube titlePrefix={titlePrefix} title={title} id={id} />
+    <YouTube {...props} />
   </div>
 );
 

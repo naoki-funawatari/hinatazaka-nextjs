@@ -1,27 +1,25 @@
-import React from "react";
-import { useRouter } from "next/router";
+import React, { Dispatch } from "react";
 import SongInfo from "./SongInfo";
+import { DisplayParameter } from "../../index";
 
 type Props = {
   song: SongInfo;
   titlePrefix: string;
+  setDisplayParameter: Dispatch<DisplayParameter>;
 };
 
-const Song = ({ song, titlePrefix }: Props) => {
-  const router = useRouter();
-  const params = {
-    query: {
-      titlePrefix: titlePrefix,
-      title: song.title,
-      id: song.id,
-    },
-  };
-
+const Song = ({ song, titlePrefix, setDisplayParameter }: Props) => {
   return (
     <li
       className="list-group-item list-group-item-action"
       role="button"
-      onClick={() => router.push(params)}
+      onClick={() =>
+        setDisplayParameter({
+          titlePrefix: titlePrefix,
+          title: song.title,
+          id: song.id,
+        })
+      }
     >
       {song.title}
     </li>
