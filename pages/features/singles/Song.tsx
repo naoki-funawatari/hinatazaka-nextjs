@@ -10,8 +10,7 @@ type Props = {
 const Song = ({ song, titlePrefix }: Props) => {
   const router = useRouter();
   const params = {
-    pathname: `/${titlePrefix}/${song.title}`,
-    state: {
+    query: {
       titlePrefix: titlePrefix,
       title: song.title,
       id: song.id,
