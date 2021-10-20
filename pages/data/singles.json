@@ -1,0 +1,117 @@
+[
+  {
+    "singleOrder": 1,
+    "titlePrefix": "1stシングル",
+    "songs": [
+      {
+        "songOrder": 1,
+        "title": "キュン",
+        "id": "K5HPhoqyO4U"
+      },
+      {
+        "songOrder": 2,
+        "title": "JOYFUL LOVE",
+        "id": "OvWLeiEiYi4"
+      },
+      {
+        "songOrder": 3,
+        "title": "Footsteps",
+        "id": "VSQD18hsYz8"
+      },
+      {
+        "songOrder": 4,
+        "title": "ときめき草",
+        "id": "G5gQmFL-xR0"
+      }
+    ]
+  },
+  {
+    "singleOrder": 2,
+    "titlePrefix": "2ndシングル",
+    "songs": [
+      {
+        "songOrder": 1,
+        "title": "ドレミソラシド",
+        "id": "qsureA57fEo"
+      },
+      {
+        "songOrder": 2,
+        "title": "キツネ",
+        "id": "31GcaaaVNhs"
+      },
+      {
+        "songOrder": 3,
+        "title": "Cage",
+        "id": "Fqq-vb-4R10"
+      },
+      {
+        "songOrder": 4,
+        "title": "やさしさが邪魔をする",
+        "id": "88l4oRQGwB0"
+      }
+    ]
+  },
+  {
+    "singleOrder": 3,
+    "titlePrefix": "3rdシングル",
+    "songs": [
+      {
+        "songOrder": 1,
+        "title": "こんなに好きになっちゃっていいの？",
+        "id": "EZBeo_k1k-A"
+      },
+      {
+        "songOrder": 2,
+        "title": "ホントの時間",
+        "id": "VhfECOTs8Tk"
+      },
+      {
+        "songOrder": 3,
+        "title": "一番好きだとみんなに言っていた小説のタイトルを思い出せない",
+        "id": "kAK9dQtzBno"
+      },
+      {
+        "songOrder": 4,
+        "title": "ママのドレス",
+        "id": "bnw3rDmcuYU"
+      }
+    ]
+  },
+  {
+    "singleOrder": 4,
+    "titlePrefix": "4thシングル",
+    "songs": [
+      {
+        "songOrder": 1,
+        "title": "ソンナコトナイヨ",
+        "id": "7njC5lgL61c"
+      },
+      {
+        "songOrder": 2,
+        "title": "青春の馬",
+        "id": "WnCksS3LEyA"
+      },
+      {
+        "songOrder": 3,
+        "title": "窓を開けなくても",
+        "id": "LjQWrrctzV0"
+      },
+      {
+        "songOrder": 4,
+        "title": "ナゼー",
+        "id": "H59N5gIuI34"
+      }
+    ]
+  },
+  {
+    "singleOrder": 5,
+    "titlePrefix": "5thシングル",
+    "songs": [
+      {
+        "songOrder": 1,
+        "title": "アザトカワイイ",
+        "id": "m-FRFhvM1EA"
+      }
+    ]
+  }
+]

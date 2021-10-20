@@ -1,5 +1,5 @@
 type SongInfo = {
-  id: number;
+  id: string;
   title: string;
   songOrder: number;
 };
