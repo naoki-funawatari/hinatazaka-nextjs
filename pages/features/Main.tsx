@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import YouTube from "./videos/YouTube";
 import { DisplayParameter } from "../index";
 
@@ -8,4 +8,4 @@ const Main = (props: DisplayParameter) => (
   </div>
 );
 
-export default Main;
+export default memo(Main);

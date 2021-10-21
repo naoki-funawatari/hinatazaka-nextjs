@@ -1,19 +1,17 @@
-import React, { Dispatch } from "react";
-import { DisplayParameter } from "../index";
+import React, { memo } from "react";
 
 type Props = {
-  defaultParameter: DisplayParameter;
-  setDisplayParameter: Dispatch<DisplayParameter>;
+  handleTitleClicked(): void;
 };
 
-const Header = ({ defaultParameter, setDisplayParameter }: Props) => {
+const Header = ({ handleTitleClicked }: Props) => {
   return (
     <div className="header">
-      <h1 role="button" onClick={() => setDisplayParameter(defaultParameter)}>
+      <h1 role="button" onClick={handleTitleClicked}>
         日向坂46
       </h1>
     </div>
   );
 };
 
-export default Header;
+export default memo(Header);

@@ -1,4 +1,4 @@
-import React, { Dispatch } from "react";
+import React, { memo, Dispatch } from "react";
 import Single from "./singles/Single";
 import SingleInfo from "./singles/SingleInfo";
 import { DisplayParameter } from "../index";
@@ -24,4 +24,4 @@ const Navigation = ({ singles, setDisplayParameter }: Props) => (
   </div>
 );
 
-export default Navigation;
+export default memo(Navigation);

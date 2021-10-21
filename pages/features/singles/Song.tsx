@@ -1,4 +1,4 @@
-import React, { Dispatch } from "react";
+import React, { memo, Dispatch } from "react";
 import SongInfo from "./SongInfo";
 import { DisplayParameter } from "../../index";
 
@@ -26,4 +26,4 @@ const Song = ({ song, titlePrefix, setDisplayParameter }: Props) => {
   );
 };
 
-export default Song;
+export default memo(Song);

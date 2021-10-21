@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { DisplayParameter } from "../../index";
 
 const YouTube = ({ titlePrefix, title, id }: DisplayParameter) => (
@@ -21,4 +21,4 @@ const YouTube = ({ titlePrefix, title, id }: DisplayParameter) => (
   </>
 );
 
-export default YouTube;
+export default memo(YouTube);

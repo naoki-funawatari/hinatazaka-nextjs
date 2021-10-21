@@ -1,4 +1,4 @@
-import React, { Dispatch } from "react";
+import React, { memo, Dispatch } from "react";
 import Song from "./Song";
 import SingleInfo from "./SingleInfo";
 import { DisplayParameter } from "../../index";
@@ -31,4 +31,4 @@ const Single = ({ single, setDisplayParameter }: Props) => (
   </li>
 );
 
-export default Single;
+export default memo(Single);

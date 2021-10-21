@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { useState } from "react";
+import { useState, useCallback, useMemo } from "react";
 import singles from "./data/singles.json";
 import Header from "./features/Header";
 import Navigation from "./features/Navigation";
@@ -14,17 +14,24 @@ export type DisplayParameter = {
 const Home: NextPage = () => {
   const single = singles[0];
   const song = single.songs[0];
-  const defaultParameter: DisplayParameter = {
-    titlePrefix: single.titlePrefix,
-    title: song.title,
-    id: song.id,
-  };
+  const defaultParameter: DisplayParameter = useMemo(
+    () => ({
+      titlePrefix: single.titlePrefix,
+      title: song.title,
+      id: song.id,
+    }),
+    [single, song]
+  );
   const [displayParameter, setDisplayParameter] =
     useState<DisplayParameter>(defaultParameter);
+  const handleTitleClicked = useCallback(
+    (): void => setDisplayParameter(defaultParameter),
+    [setDisplayParameter, defaultParameter]
+  );
 
   return (
     <div className="app">
-      <Header {...{ defaultParameter, setDisplayParameter }} />
+      <Header {...{ handleTitleClicked }} />
       <Navigation {...{ singles, setDisplayParameter }} />
       <Main {...displayParameter} />
     </div>
