@@ -1,7 +1,7 @@
 import React, { memo, Dispatch } from "react";
 import Single from "./singles/Single";
 import SingleInfo from "./singles/SingleInfo";
-import { DisplayParameter } from "../index";
+import { DisplayParameter } from "../pages/index";
 
 type Props = {
   singles: SingleInfo[];

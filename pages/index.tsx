@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import { useState, useCallback, useMemo } from "react";
-import singles from "./data/singles.json";
-import Header from "./features/Header";
-import Navigation from "./features/Navigation";
-import Main from "./features/Main";
+import singles from "../data/singles.json";
+import Header from "../components/Header";
+import Navigation from "../components/Navigation";
+import Main from "../components/Main";
 
 export type DisplayParameter = {
   titlePrefix: string;

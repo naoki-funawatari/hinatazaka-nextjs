@@ -1,6 +1,6 @@
 import React, { memo, Dispatch } from "react";
 import SongInfo from "./SongInfo";
-import { DisplayParameter } from "../../index";
+import { DisplayParameter } from "../../pages/index";
 
 type Props = {
   song: SongInfo;
