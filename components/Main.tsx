@@ -1,7 +1,7 @@
-import React, { memo } from "react";
+import React, { FC, memo } from "react";
 import YouTube from "./videos/YouTube";
 
-const Main = () => (
+const Main: FC = () => (
   <div className="main">
     <YouTube />
   </div>

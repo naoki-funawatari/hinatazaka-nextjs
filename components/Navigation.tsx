@@ -1,8 +1,8 @@
-import React, { memo } from "react";
+import React, { FC, memo } from "react";
 import Single from "./singles/Single";
 import singles from "../data/singles.json";
 
-const Navigation = () => (
+const Navigation: FC = () => (
   <div className="nav">
     <h3>シングル</h3>
     <ul className="list-group list-group-flush">

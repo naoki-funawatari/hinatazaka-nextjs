@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { FC, memo } from "react";
 import Song from "./Song";
 import SingleInfo from "./SingleInfo";
 
@@ -6,7 +6,7 @@ type Props = {
   single: SingleInfo;
 };
 
-const Single = ({ single }: Props) => (
+const Single: FC<Props> = ({ single }) => (
   <li className="list-group-item">
     <div>
       <h5>{single.titlePrefix}</h5>

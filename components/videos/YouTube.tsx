@@ -1,7 +1,7 @@
-import React, { memo } from "react";
+import React, { FC, memo } from "react";
 import { useRouter } from "next/router";
 
-const YouTube = () => {
+const YouTube: FC = () => {
   const router = useRouter();
   const { single, song } = router.query;
 
