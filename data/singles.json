@@ -10,18 +10,28 @@
       },
       {
         "songOrder": 2,
-        "title": "JOYFUL LOVE",
+        "title": "JOYFUL LOVE Short Ver.",
         "id": "OvWLeiEiYi4"
       },
       {
         "songOrder": 3,
-        "title": "Footsteps",
+        "title": "Footsteps Short Ver.",
         "id": "VSQD18hsYz8"
       },
       {
         "songOrder": 4,
-        "title": "ときめき草",
+        "title": "ときめき草 Short Ver.",
         "id": "G5gQmFL-xR0"
+      },
+      {
+        "songOrder": 5,
+        "title": "JOYFUL LOVE",
+        "id": "mbXtz9zGB_E"
+      },
+      {
+        "songOrder": 6,
+        "title": "ときめき草",
+        "id": "bgCR9HlsSPY"
       }
     ]
   },
@@ -36,18 +46,23 @@
       },
       {
         "songOrder": 2,
-        "title": "キツネ",
+        "title": "キツネ Short Ver.",
         "id": "31GcaaaVNhs"
       },
       {
         "songOrder": 3,
-        "title": "Cage",
+        "title": "Cage Short Ver.",
         "id": "Fqq-vb-4R10"
       },
       {
         "songOrder": 4,
-        "title": "やさしさが邪魔をする",
+        "title": "やさしさが邪魔をする Short Ver.",
         "id": "88l4oRQGwB0"
+      },
+      {
+        "songOrder": 5,
+        "title": "キツネ",
+        "id": "13yytDs4TeQ"
       }
     ]
   },
@@ -62,18 +77,23 @@
       },
       {
         "songOrder": 2,
-        "title": "ホントの時間",
+        "title": "ホントの時間 Short Ver.",
         "id": "VhfECOTs8Tk"
       },
       {
         "songOrder": 3,
-        "title": "一番好きだとみんなに言っていた小説のタイトルを思い出せない",
+        "title": "一番好きだとみんなに言っていた小説のタイトルを思い出せない Short Ver.",
         "id": "kAK9dQtzBno"
       },
       {
         "songOrder": 4,
-        "title": "ママのドレス",
+        "title": "ママのドレス Short Ver.",
         "id": "bnw3rDmcuYU"
+      },
+      {
+        "songOrder": 5,
+        "title": "ホントの時間",
+        "id": "7iCf1O3tSb4"
       }
     ]
   },
@@ -88,18 +108,34 @@
       },
       {
         "songOrder": 2,
-        "title": "青春の馬",
+        "title": "青春の馬 Short Ver.",
         "id": "WnCksS3LEyA"
       },
       {
         "songOrder": 3,
-        "title": "窓を開けなくても",
+        "title": "窓を開けなくても Short Ver.",
         "id": "LjQWrrctzV0"
       },
       {
         "songOrder": 4,
-        "title": "ナゼー",
+        "title": "ナゼー Short Ver.",
         "id": "H59N5gIuI34"
+      },
+      {
+        "songOrder": 5,
+        "title": "青春の馬",
+        "id": "hZQzmzXjJB0"
+      }
+    ]
+  },
+  {
+    "singleOrder": 4.5,
+    "titlePrefix": "1stアルバム",
+    "songs": [
+      {
+        "songOrder": 1,
+        "title": "アザトカワイイ",
+        "id": "m-FRFhvM1EA"
       }
     ]
   },
@@ -109,8 +145,59 @@
     "songs": [
       {
         "songOrder": 1,
-        "title": "アザトカワイイ",
-        "id": "m-FRFhvM1EA"
+        "title": "君しか勝たん",
+        "id": "Z59HsgPVbWY"
+      },
+      {
+        "songOrder": 2,
+        "title": "声の足跡",
+        "id": "YClzk5GpaHM"
+      },
+      {
+        "songOrder": 3,
+        "title": "Right?",
+        "id": "pyMOOyEWrMg"
+      },
+      {
+        "songOrder": 4,
+        "title": "どうする？どうする？どうする？",
+        "id": "Q1E7duxclv8"
+      },
+      {
+        "songOrder": 5,
+        "title": "世界にはThank you!が溢れている",
+        "id": "Tl51xNHeP4g"
+      }
+    ]
+  },
+  {
+    "singleOrder": 6,
+    "titlePrefix": "6thシングル",
+    "songs": [
+      {
+        "songOrder": 1,
+        "title": "ってか",
+        "id": "pZDqElqNW34"
+      },
+      {
+        "songOrder": 2,
+        "title": "何度でも何度でも",
+        "id": "iKa0B66oQAQ"
+      },
+      {
+        "songOrder": 3,
+        "title": "夢は何歳まで？",
+        "id": "_YiekxdpaQE"
+      },
+      {
+        "songOrder": 4,
+        "title": "あくびLetter",
+        "id": "KcpvHDt0bPc"
+      },
+      {
+        "songOrder": 5,
+        "title": "酸っぱい自己嫌悪",
+        "id": "eDupOQ6Dc9g"
       }
     ]
   }

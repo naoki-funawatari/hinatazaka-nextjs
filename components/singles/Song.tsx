@@ -12,7 +12,9 @@ const Song: FC<Props> = ({ song, titlePrefix }) => {
     <li className="list-group-item list-group-item-action" role="button">
       <Link
         href={`/[single]/[song]?id=${song.id}`}
-        as={`/${titlePrefix}/${song.title}`}
+        as={`/${encodeURIComponent(titlePrefix)}/${encodeURIComponent(
+          song.title
+        )}`}
       >
         {song.title}
       </Link>
