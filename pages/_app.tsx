@@ -1,10 +1,11 @@
+import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import "../styles/globals.scss";
 import "../styles/bootstrap/bootstrap.scss";
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
     <div className="app">
       <Header />
@@ -12,6 +13,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
     </div>
   );
-}
+};
 
 export default MyApp;

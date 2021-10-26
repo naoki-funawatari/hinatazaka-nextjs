@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Main from "../components/Main";
 
-const Home: NextPage = () => <Main />;
+const Index: NextPage = () => <Main />;
 
-export default Home;
+export default Index;

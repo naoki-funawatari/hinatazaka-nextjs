@@ -1,7 +1,7 @@
-import React, { memo } from "react";
+import React, { FC, memo } from "react";
 import Link from "next/link";
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <div className="header">
       <h1>
