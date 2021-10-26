@@ -10,7 +10,12 @@ type Props = {
 const Song: FC<Props> = ({ song, titlePrefix }) => {
   return (
     <li className="list-group-item list-group-item-action" role="button">
-      <Link href={`/${titlePrefix}/${song.title}`}>{song.title}</Link>
+      <Link
+        href={`/[single]/[song]?id=${song.id}`}
+        as={`/${titlePrefix}/${song.title}`}
+      >
+        {song.title}
+      </Link>
     </li>
   );
 };

@@ -1,9 +1,20 @@
 import React, { FC, memo } from "react";
 import { useRouter } from "next/router";
+import singles from "../../data/singles.json";
 
 const YouTube: FC = () => {
   const router = useRouter();
-  const { single, song } = router.query;
+  const { single, song, id } = (() => {
+    const single = singles[0];
+    const song = single.songs[0];
+    return router.pathname === "/"
+      ? {
+          single: single.titlePrefix,
+          song: song.title,
+          id: song.id,
+        }
+      : router.query;
+  })();
 
   return (
     <>
@@ -11,7 +22,7 @@ const YouTube: FC = () => {
         {single}『{song}』
       </h2>
       <div className="contentWrapper">
-        {/* <iframe
+        <iframe
           className="content"
           title={`『${song}』`}
           width="560"
@@ -20,7 +31,7 @@ const YouTube: FC = () => {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        ></iframe> */}
+        ></iframe>
       </div>
     </>
   );
