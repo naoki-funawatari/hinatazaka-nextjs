@@ -1,7 +1,7 @@
 import React, { memo, Dispatch } from "react";
 import Song from "./Song";
 import SingleInfo from "./SingleInfo";
-import { DisplayParameter } from "../../index";
+import { DisplayParameter } from "../../pages/index";
 
 type Props = {
   single: SingleInfo;

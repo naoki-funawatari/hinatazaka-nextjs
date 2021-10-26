@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { DisplayParameter } from "../../index";
+import { DisplayParameter } from "../../pages/index";
 
 const YouTube = ({ titlePrefix, title, id }: DisplayParameter) => (
   <>
