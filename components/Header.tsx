@@ -1,14 +1,11 @@
 import React, { memo } from "react";
+import Link from "next/link";
 
-type Props = {
-  handleTitleClicked(): void;
-};
-
-const Header = ({ handleTitleClicked }: Props) => {
+const Header = () => {
   return (
     <div className="header">
-      <h1 role="button" onClick={handleTitleClicked}>
-        日向坂46
+      <h1>
+        <Link href="/">日向坂46</Link>
       </h1>
     </div>
   );
