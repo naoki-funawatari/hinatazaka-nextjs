@@ -1,5 +1,5 @@
 import React, { FC, memo } from "react";
-import YouTube from "./videos/YouTube";
+import YouTube from "@/components/videos/YouTube";
 
 const Main: FC = () => {
   return (

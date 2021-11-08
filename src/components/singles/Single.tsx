@@ -1,6 +1,6 @@
 import React, { FC, memo } from "react";
-import Song from "./Song";
-import SingleInfo from "./SingleInfo";
+import Song from "@/components/singles/Song";
+import SingleInfo from "@/components/singles/SingleInfo";
 
 type Props = {
   single: SingleInfo;

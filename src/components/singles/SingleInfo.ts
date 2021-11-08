@@ -1,4 +1,4 @@
-import SongInfo from "./SongInfo";
+import SongInfo from "@/components/singles/SongInfo";
 
 type SingleInfo = {
   titlePrefix: string;

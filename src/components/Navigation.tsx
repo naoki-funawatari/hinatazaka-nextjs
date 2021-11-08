@@ -1,6 +1,6 @@
 import React, { FC, memo } from "react";
-import Single from "./singles/Single";
-import singles from "../../src/data/singles.json";
+import Single from "@/components/singles/Single";
+import singles from "@/data/singles.json";
 
 const Navigation: FC = () => {
   return (
