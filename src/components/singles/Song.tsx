@@ -1,6 +1,6 @@
 import React, { FC, memo } from "react";
 import Link from "next/link";
-import SongInfo from "./SongInfo";
+import SongInfo from "@/components/singles/SongInfo";
 
 type Props = {
   song: SongInfo;
