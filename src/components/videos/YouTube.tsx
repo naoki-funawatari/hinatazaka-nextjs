@@ -1,6 +1,6 @@
 import React, { FC, memo } from "react";
 import { useRouter } from "next/router";
-import singles from "../../data/singles.json";
+import singles from "../../../data/singles.json";
 
 const YouTube: FC = () => {
   const router = useRouter();
