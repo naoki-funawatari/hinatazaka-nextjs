@@ -6,7 +6,7 @@ type Props = {
   titlePrefix: string;
 };
 
-export default ({ song, titlePrefix }: Props) => {
+const Component = ({ song, titlePrefix }: Props) => {
   const href = `/[single]/[song]?id=${song.id}`;
   const as = `/${encodeURIComponent(titlePrefix)}/${encodeURIComponent(song.title)}`;
 
@@ -16,3 +16,5 @@ export default ({ song, titlePrefix }: Props) => {
     </li>
   );
 };
+
+export default Component;

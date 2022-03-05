@@ -2,7 +2,7 @@ import { Scrollbars } from "react-custom-scrollbars";
 import Single from "@/components/singles/Single";
 import singles from "@/data/singles.json";
 
-export default () => {
+const Component = () => {
   return (
     <div className="nav">
       <Scrollbars universal={true}>
@@ -18,3 +18,5 @@ export default () => {
     </div>
   );
 };
+
+export default Component;

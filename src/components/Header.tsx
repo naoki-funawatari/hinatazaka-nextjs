@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default () => {
+const Component = () => {
   return (
     <div className="header">
       <h1>
@@ -9,3 +9,5 @@ export default () => {
     </div>
   );
 };
+
+export default Component;

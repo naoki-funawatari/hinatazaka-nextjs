@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import singles from "@/data/singles.json";
 
-export default () => {
+const Component = () => {
   const router = useRouter();
   const { single, song, id } = (() => {
     const single = singles[0];
@@ -35,3 +35,5 @@ export default () => {
     </>
   );
 };
+
+export default Component;

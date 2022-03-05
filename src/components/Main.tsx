@@ -1,7 +1,7 @@
 import { Scrollbars } from "react-custom-scrollbars";
 import YouTube from "@/components/videos/YouTube";
 
-export default () => {
+const Component = () => {
   return (
     <div className="main">
       <Scrollbars universal={true}>
@@ -10,3 +10,5 @@ export default () => {
     </div>
   );
 };
+
+export default Component;

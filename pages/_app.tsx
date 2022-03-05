@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import "@/styles/globals.scss";
 import "@/styles/bootstrap/bootstrap.scss";
 
-export default ({ Component, pageProps }: AppProps) => {
+const Component = ({ Component, pageProps }: AppProps) => {
   return (
     <div className="app">
       <Head>
@@ -17,3 +17,5 @@ export default ({ Component, pageProps }: AppProps) => {
     </div>
   );
 };
+
+export default Component;

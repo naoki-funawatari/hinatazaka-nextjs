@@ -1,5 +1,7 @@
 import Main from "@/components/Main";
 
-export default () => {
+const Component = () => {
   return <Main />;
 };
+
+export default Component;
