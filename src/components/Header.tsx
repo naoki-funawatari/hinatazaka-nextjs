@@ -1,7 +1,6 @@
-import React, { FC, memo } from "react";
 import Link from "next/link";
 
-const Header: FC = () => {
+export default () => {
   return (
     <div className="header">
       <h1>
@@ -10,5 +9,3 @@ const Header: FC = () => {
     </div>
   );
 };
-
-export default memo(Header);

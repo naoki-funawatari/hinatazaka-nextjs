@@ -1,8 +1,7 @@
-import React, { FC, memo } from "react";
-import YouTube from "@/components/videos/YouTube";
 import { Scrollbars } from "react-custom-scrollbars";
+import YouTube from "@/components/videos/YouTube";
 
-const Main: FC = () => {
+export default () => {
   return (
     <div className="main">
       <Scrollbars universal={true}>
@@ -11,5 +10,3 @@ const Main: FC = () => {
     </div>
   );
 };
-
-export default memo(Main);

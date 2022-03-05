@@ -1,4 +1,3 @@
-import React, { FC, memo } from "react";
 import Link from "next/link";
 import SongInfo from "@/components/singles/SongInfo";
 
@@ -7,17 +6,13 @@ type Props = {
   titlePrefix: string;
 };
 
-const Song: FC<Props> = ({ song, titlePrefix }) => {
+export default ({ song, titlePrefix }: Props) => {
+  const href = `/[single]/[song]?id=${song.id}`;
+  const as = `/${encodeURIComponent(titlePrefix)}/${encodeURIComponent(song.title)}`;
+
   return (
     <li className="list-group-item list-group-item-action" role="button">
-      <Link
-        href={`/[single]/[song]?id=${song.id}`}
-        as={`/${encodeURIComponent(titlePrefix)}/${encodeURIComponent(song.title)}`}
-      >
-        {song.title}
-      </Link>
+      <Link {...{ href, as }}>{song.title}</Link>
     </li>
   );
 };
-
-export default memo(Song);
