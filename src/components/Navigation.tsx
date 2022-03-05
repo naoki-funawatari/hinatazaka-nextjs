@@ -1,5 +1,5 @@
 import { Scrollbars } from "react-custom-scrollbars";
-import Single from "@/components/singles/Single";
+import Single from "@/features/singles/Single";
 import singles from "@/data/singles.json";
 
 const Component = () => {

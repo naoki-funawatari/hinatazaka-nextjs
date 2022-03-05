@@ -1,5 +1,5 @@
 import { Scrollbars } from "react-custom-scrollbars";
-import YouTube from "@/components/videos/YouTube";
+import YouTube from "@/features/videos/YouTube";
 
 const Component = () => {
   return (
