@@ -1,12 +1,11 @@
-import React, { FC, memo } from "react";
 import Song from "@/components/singles/Song";
-import SingleInfo from "@/components/singles/SingleInfo";
+import type SingleInfo from "@/components/singles/SingleInfo";
 
 type Props = {
   single: SingleInfo;
 };
 
-const Single: FC<Props> = ({ single }) => {
+const Component = ({ single }: Props) => {
   return (
     <li className="list-group-item">
       <div>
@@ -26,4 +25,4 @@ const Single: FC<Props> = ({ single }) => {
   );
 };
 
-export default memo(Single);
+export default Component;

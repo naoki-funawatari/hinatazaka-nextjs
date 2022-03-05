@@ -1,9 +1,8 @@
-import React, { FC, memo } from "react";
+import { Scrollbars } from "react-custom-scrollbars";
 import Single from "@/components/singles/Single";
 import singles from "@/data/singles.json";
-import { Scrollbars } from "react-custom-scrollbars";
 
-const Navigation: FC = () => {
+const Component = () => {
   return (
     <div className="nav">
       <Scrollbars universal={true}>
@@ -20,4 +19,4 @@ const Navigation: FC = () => {
   );
 };
 
-export default memo(Navigation);
+export default Component;

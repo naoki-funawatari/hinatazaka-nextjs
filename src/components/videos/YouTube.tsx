@@ -1,8 +1,7 @@
-import React, { FC, memo } from "react";
 import { useRouter } from "next/router";
 import singles from "@/data/singles.json";
 
-const YouTube: FC = () => {
+const Component = () => {
   const router = useRouter();
   const { single, song, id } = (() => {
     const single = singles[0];
@@ -37,4 +36,4 @@ const YouTube: FC = () => {
   );
 };
 
-export default memo(YouTube);
+export default Component;

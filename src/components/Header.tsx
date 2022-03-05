@@ -1,7 +1,6 @@
-import React, { FC, memo } from "react";
 import Link from "next/link";
 
-const Header: FC = () => {
+const Component = () => {
   return (
     <div className="header">
       <h1>
@@ -11,4 +10,4 @@ const Header: FC = () => {
   );
 };
 
-export default memo(Header);
+export default Component;
