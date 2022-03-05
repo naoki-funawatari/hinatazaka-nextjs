@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 import type SongInfo from "@/features/singles/SongInfo";
 
 type Props = {
@@ -7,12 +7,18 @@ type Props = {
 };
 
 const Component = ({ song, titlePrefix }: Props) => {
+  const router = useRouter();
   const href = `/[single]/[song]?id=${song.id}`;
   const as = `/${encodeURIComponent(titlePrefix)}/${encodeURIComponent(song.title)}`;
+  const handleClicked = () => router.push(href, as);
 
   return (
-    <li className="list-group-item list-group-item-action" role="button">
-      <Link {...{ href, as }}>{song.title}</Link>
+    <li
+      className="list-group-item list-group-item-action song-list-item"
+      role="button"
+      onClick={handleClicked}
+    >
+      {song.title}
     </li>
   );
 };

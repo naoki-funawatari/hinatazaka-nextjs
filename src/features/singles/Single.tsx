@@ -10,8 +10,8 @@ const Component = ({ single }: Props) => {
     <li className="list-group-item">
       <div>
         <h5>{single.titlePrefix}</h5>
-        <div>
-          <span className="badge badge-primary badge-pill">{single.songs.length}</span>
+        <div className="badge-wrap">
+          <span className="badge rounded-pill bg-primary">{single.songs.length}</span>
         </div>
       </div>
       <ul className="list-group list-group-flush">
