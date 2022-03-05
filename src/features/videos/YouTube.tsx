@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
+import { Audio } from "react-loader-spinner";
 import singles from "@/data/singles.json";
 
 type QueryProps = {
@@ -27,11 +28,12 @@ const useParams = () => {
   return { single, song, id };
 };
 const useFetchData = (id: string) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(new Date().getTime().toString());
   useEffect(() => {
-    setCount(state => state + 1);
+    setCount(new Date().getTime().toString());
   }, [id]);
   const { data } = useSWR(`${count}`, fetcher);
+  console.log(count);
   return data;
 };
 
@@ -39,7 +41,12 @@ const Component = () => {
   const { single, song, id } = useParams();
   const data = useFetchData(id);
   if (!data) {
-    return <div>Loading...</div>;
+    /* https://codesandbox.io/s/react-loader-spinner-u2f2b */
+    return (
+      <div className="loading-spinner">
+        <Audio color="#01BFFF" height={200} width={200} />
+      </div>
+    );
   }
 
   return (

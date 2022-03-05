@@ -97,6 +97,15 @@ body,
   height: 95%;
 }
 
+.loading-spinner {
+  height: 100%;
+  max-height: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .header,
 .nav,
 .main {
