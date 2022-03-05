@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SongInfo from "@/components/singles/SongInfo";
+import type SongInfo from "@/components/singles/SongInfo";
 
 type Props = {
   song: SongInfo;

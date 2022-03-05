@@ -1,5 +1,5 @@
 import Song from "@/components/singles/Song";
-import SingleInfo from "@/components/singles/SingleInfo";
+import type SingleInfo from "@/components/singles/SingleInfo";
 
 type Props = {
   single: SingleInfo;
