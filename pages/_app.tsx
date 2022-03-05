@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
@@ -19,6 +20,9 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <div className="app">
+      <Head>
+        <title>日向坂46</title>
+      </Head>
       <Header />
       <Navigation />
       <Component {...pageProps} />
