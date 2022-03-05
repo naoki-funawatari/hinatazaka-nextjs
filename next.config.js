@@ -4,6 +4,10 @@ module.exports = {
   reactStrictMode: true,
   webpack(config, options) {
     config.resolve.alias["@"] = path.join(__dirname, "src");
+    config.watchOptions = {
+      poll: 800,
+      aggregateTimeout: 300,
+    };
     return config;
   },
 };

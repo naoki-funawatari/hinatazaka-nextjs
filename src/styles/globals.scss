@@ -34,7 +34,7 @@ body,
 .nav {
   grid-row: 2/3;
   grid-column: 1/2;
-  overflow-y: auto;
+  overflow: hidden;
   h3 {
     padding: {
       top: 10px;
