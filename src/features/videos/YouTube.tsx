@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 import { Audio } from "react-loader-spinner";
-import singles from "@/data/singles.json";
+import { useSingles } from "@/apis";
 
 type QueryProps = {
   single: string;
@@ -12,6 +12,8 @@ type QueryProps = {
 
 const fetcher = () => new Promise<boolean>(resolve => setTimeout(() => resolve(true), 500));
 const useParams = () => {
+  const { data } = useSingles();
+  const singles = data ?? [];
   const { pathname, query } = useRouter();
   const { single, song, id } = (() => {
     const single = singles[0];
