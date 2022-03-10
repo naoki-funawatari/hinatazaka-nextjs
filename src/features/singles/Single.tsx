@@ -1,5 +1,5 @@
+import type { SingleInfo } from "@/models";
 import Song from "@/features/singles/Song";
-import type SingleInfo from "@/features/singles/SingleInfo";
 
 type Props = {
   single: SingleInfo;

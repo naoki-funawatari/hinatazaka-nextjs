@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import type SongInfo from "@/features/singles/SongInfo";
+import type { SongInfo } from "@/models";
 
 type Props = {
   song: SongInfo;

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 import { Audio } from "react-loader-spinner";
-import singles from "@/data/singles.json";
+import { useSingles } from "@/apis";
 
 type QueryProps = {
   single: string;
@@ -10,36 +10,41 @@ type QueryProps = {
   id: string;
 };
 
-const fetcher = () => new Promise<boolean>(resolve => setTimeout(() => resolve(true), 500));
 const useParams = () => {
+  const { data: singles } = useSingles();
   const { pathname, query } = useRouter();
-  const { single, song, id } = (() => {
-    const single = singles[0];
-    const song = single.songs[0];
-    return pathname === "/"
-      ? {
-          single: single.titlePrefix,
-          song: song.title,
-          id: song.id,
-        }
-      : (query as QueryProps);
-  })();
 
-  return { single, song, id };
+  if (!singles) {
+    return { single: undefined, song: undefined, id: undefined };
+  }
+
+  const single = singles[0];
+  const song = single.songs[0];
+  if (pathname === "/") {
+    return {
+      single: single.titlePrefix,
+      song: song.title,
+      id: song.id,
+    };
+  }
+
+  return query as QueryProps;
 };
-const useFetchData = (id: string) => {
+
+const useFetchData = (id: string | undefined) => {
+  const fetcher = () => new Promise<boolean>(resolve => setTimeout(() => resolve(true), 500));
   const [count, setCount] = useState(new Date().getTime().toString());
   useEffect(() => {
     setCount(new Date().getTime().toString());
   }, [id]);
-  const { data } = useSWR(`${count}`, fetcher);
-  console.log(count);
-  return data;
+
+  return useSWR(`${count}`, fetcher);
 };
 
 const Component = () => {
   const { single, song, id } = useParams();
-  const data = useFetchData(id);
+  const { data } = useFetchData(id);
+
   if (!data) {
     /* https://codesandbox.io/s/react-loader-spinner-u2f2b */
     return (
