@@ -7,14 +7,16 @@ import "@/styles/bootstrap/bootstrap.scss";
 
 const Component = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className="app">
+    <>
       <Head>
         <title>日向坂46</title>
       </Head>
-      <Header />
-      <Navigation />
-      <Component {...pageProps} />
-    </div>
+      <div className="app">
+        <Header />
+        <Navigation />
+        <Component {...pageProps} />
+      </div>
+    </>
   );
 };
 
