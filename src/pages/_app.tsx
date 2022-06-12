@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import "@/styles/globals.scss";
 import "@/styles/bootstrap/bootstrap.scss";
 
-const Component = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
@@ -20,4 +20,4 @@ const Component = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default Component;
+export default App;

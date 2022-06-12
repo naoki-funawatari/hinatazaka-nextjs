@@ -6,7 +6,7 @@ type Props = {
   titlePrefix: string;
 };
 
-const Component = ({ song, titlePrefix }: Props) => {
+const Song = ({ song, titlePrefix }: Props) => {
   const router = useRouter();
   const href = `/[single]/[song]?id=${song.id}`;
   const as = `/${encodeURIComponent(titlePrefix)}/${encodeURIComponent(song.title)}`;
@@ -23,4 +23,4 @@ const Component = ({ song, titlePrefix }: Props) => {
   );
 };
 
-export default Component;
+export default Song;

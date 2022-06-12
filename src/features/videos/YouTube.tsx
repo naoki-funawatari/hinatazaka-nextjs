@@ -41,7 +41,7 @@ const useFetchData = (id: string | undefined) => {
   return useSWR(`${count}`, fetcher);
 };
 
-const Component = () => {
+const YouTube = () => {
   const { single, song, id } = useParams();
   const { data } = useFetchData(id);
 
@@ -75,4 +75,4 @@ const Component = () => {
   );
 };
 
-export default Component;
+export default YouTube;

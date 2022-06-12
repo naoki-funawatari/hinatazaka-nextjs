@@ -1,7 +1,7 @@
 import Main from "@/components/Main";
 
-const Component = () => {
+const Index = () => {
   return <Main />;
 };
 
-export default Component;
+export default Index;

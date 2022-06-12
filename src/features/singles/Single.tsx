@@ -5,7 +5,7 @@ type Props = {
   single: SingleInfo;
 };
 
-const Component = ({ single }: Props) => {
+const Single = ({ single }: Props) => {
   return (
     <li className="list-group-item">
       <div>
@@ -25,4 +25,4 @@ const Component = ({ single }: Props) => {
   );
 };
 
-export default Component;
+export default Single;

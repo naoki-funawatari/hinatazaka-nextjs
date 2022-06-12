@@ -2,7 +2,7 @@ import { Scrollbars } from "react-custom-scrollbars";
 import { useSingles } from "@/apis";
 import Single from "@/features/singles/Single";
 
-const Component = () => {
+const Navigation = () => {
   const { data } = useSingles();
   const singles = data ?? [];
 
@@ -22,4 +22,4 @@ const Component = () => {
   );
 };
 
-export default Component;
+export default Navigation;
