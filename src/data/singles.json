@@ -200,5 +200,36 @@
         "id": "eDupOQ6Dc9g"
       }
     ]
+  },
+  {
+    "singleOrder": 7,
+    "titlePrefix": "7thシングル",
+    "songs": [
+      {
+        "songOrder": 1,
+        "title": "僕なんか",
+        "id": "15Hsw9QSeoc"
+      },
+      {
+        "songOrder": 2,
+        "title": "飛行機雲ができる理由",
+        "id": "E6EItQRTmAI"
+      },
+      {
+        "songOrder": 3,
+        "title": "恋した魚は空を飛ぶ",
+        "id": "26ORLsPJYHo"
+      },
+      {
+        "songOrder": 4,
+        "title": "真夜中の懺悔大会",
+        "id": "CuiLVLTyI3c"
+      },
+      {
+        "songOrder": 5,
+        "title": "ゴーフルと君",
+        "id": "hfnS1AUCf5I"
+      }
+    ]
   }
 ]
